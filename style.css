@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#calculator{
+    border:2px solid black;
+    padding:10px;
+    width: 400px;
+    height: 500px;
+}
+
+#result{
+    border: 1px solid black;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#digits{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#digit{
+    width: 600px;
+    border-radius: 5px;
+}
+
+#panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#panel>button {
+    /* flex-grow: 0 | flex-shrink: 0 | flex-basis: largura calculada */
+    flex: 0 0 calc((100% - 3 * 16px) / 4);
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    width: 20px;
+    height: 60px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#ac, #perc, #back {
+    background: gray;
+}
+
+#div, #mult, #minus, #plus, #equals{
+    background-color: orange;
+}
